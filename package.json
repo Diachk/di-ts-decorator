@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Diachk/di-ts-decorator/issues"
   },
-  "homepage": "https://github.com/Diachk/di-ts-decorator#readme"
+  "homepage": "https://github.com/Diachk/di-ts-decorator#readme",
+  "devDependencies": {
+    "@types/node": "^22.10.7"
+  }
 }
