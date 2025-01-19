@@ -1,11 +1,4 @@
 /**
- * LINKURIOUS CONFIDENTIAL
- * Copyright Linkurious SAS 2012 - 2022
- *
- * Created on 2022-01-11
- */
-
-/**
  * Return input value if it is a proper `Error`, or wrap it into an `Error` otherwise.
  *
  * We try all the strategies we know of in order of likelihood and compute cost so that this
@@ -20,15 +13,16 @@ export function castToError(throwable: unknown): Error {
     return throwable;
   }
 
-  if (typeof throwable === 'string') {
+  if (typeof throwable === "string") {
     return new Error(throwable);
   }
 
-  if (throwable && typeof throwable === 'object') {
+  if (throwable && typeof throwable === "object") {
     const error = throwable as Error;
-    const hasMessage = typeof error.message === 'string';
-    const hasName = typeof error.name === 'string';
-    const hasOptionalStack = error.stack === undefined || typeof error.stack === 'string';
+    const hasMessage = typeof error.message === "string";
+    const hasName = typeof error.name === "string";
+    const hasOptionalStack =
+      error.stack === undefined || typeof error.stack === "string";
     if (hasMessage && hasName && hasOptionalStack) {
       return error;
     }

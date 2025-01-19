@@ -1,13 +1,26 @@
 {
   "compilerOptions": {
+    "target": "es2017",
+    "lib": ["es7"],
+    "moduleResolution": "node",
     "module": "commonjs",
-    "target": "ESNext",
+    "outDir": "dist",
+    "rootDir": ".",
+    "inlineSourceMap": true,
+    "noImplicitReturns": true,
+    "incremental": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
     "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "allowJs": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "dist"
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "exclude": ["node_modules", "dist"]
 }
