@@ -1,0 +1,24 @@
+.DS_STORE
+*.log
+
+# Output files
+*.js
+*.d.ts
+/.nyc_output/
+/reports/
+/dist/
+
+# NPM
+/node_modules/
+.npmrc
+npm-shrinkwrap.json
+
+# IDE
+.vagrant
+.idea/
+.vscode/
+
+# Helm
+template.yaml
+Chart.lock
+charts/*/charts

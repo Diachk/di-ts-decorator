@@ -1,0 +1,23 @@
+{
+  "name": "ts-easy-stream",
+  "version": "1.0.0",
+  "description": "Dependency injection with Ts decorators",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diachk/di-ts-decorator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diachk/di-ts-decorator/issues"
+  },
+  "homepage": "https://github.com/Diachk/di-ts-decorator#readme"
+}
